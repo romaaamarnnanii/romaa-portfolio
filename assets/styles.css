@@ -109,7 +109,7 @@ section{padding:92px 0}
 .feat{display:grid;grid-template-columns:1.15fr 1fr;gap:0;border:1px solid var(--hair);border-radius:14px;overflow:hidden;background:var(--white);margin-bottom:28px;text-decoration:none;color:inherit;transition:transform .16s,box-shadow .16s}
 .feat:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(176,23,107,.12)}
 .feat.flip{grid-template-columns:1fr 1.15fr}
-@media(max-width:760px){.feat{grid-template-columns:1fr}}
+@media(max-width:760px){.feat,.feat.flip{grid-template-columns:1fr}}
 .feat .fimg{min-height:300px;background:#F1ECFB;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .feat .fimg img{width:100%;height:100%;object-fit:contain;object-position:center;padding:18px}
 .feat .fbody{padding:38px 40px;display:flex;flex-direction:column;justify-content:center}
