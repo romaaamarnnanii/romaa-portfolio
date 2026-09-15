@@ -195,6 +195,23 @@ footer{padding:40px 0;font-size:13px;color:var(--ink-soft);border-top:1px solid 
   .navtoggle{display:block}
 }
 
+/* SMALL SCREENS — tighten spacing & fix cramped crops */
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  section{padding:60px 0}
+  .hero .wrap{padding:48px 20px 60px}
+  .hero .greet{margin-bottom:24px}
+  .hero-metrics{gap:22px 28px;margin-top:28px}
+  .sec-intro{margin-bottom:38px}
+  /* Beyond: taller thin crops -> shorter, better-proportioned strip */
+  .bcard .bhead{padding:16px 22px}
+  .bcard .bbody{padding:0 22px 16px}
+  .bcard .imgstrip{padding:14px 22px 22px;gap:10px}
+  .bcard .imgstrip img,.bcard .imgstrip .imgslot{height:132px;min-height:132px}
+  .feat .fimg{min-height:220px}
+  .feat .fbody{padding:30px 26px}
+}
+
 /* ==== CASE STUDY PAGES ==== */
 .case-wrap{max-width:820px;margin:0 auto;padding:0 32px}
 .case-nav .wrap{max-width:1080px;display:flex;align-items:center;justify-content:space-between;height:70px}
@@ -220,3 +237,11 @@ article li::before{content:"";position:absolute;left:0;top:11px;width:8px;height
 .clientrow span{background:var(--pink-soft);border:1px solid var(--hair);border-radius:100px;padding:7px 16px;font-size:13.5px;font-weight:500}
 .nextnav{border-top:1px solid var(--hair);padding:36px 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .nextnav a{text-decoration:none;font-weight:600;color:var(--fuchsia)}
+@media(max-width:600px){
+  .case-wrap{padding:0 20px}
+  .case-nav .wrap{padding:0 20px}
+  .case-head{padding:44px 0 24px}
+  .meta-row{gap:18px 28px}
+  article h2{margin:34px 0 12px}
+  .pull{font-size:20px;padding-left:18px;margin:28px 0}
+}
